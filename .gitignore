@@ -1,0 +1,10 @@
+# Auto-generated plugin data (installed by lazy.nvim)
+lazy/
+
+# Neovim state/cache files
+*.log
+.cache/
+
+# OS files
+.DS_Store
+Thumbs.db
