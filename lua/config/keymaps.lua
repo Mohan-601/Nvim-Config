@@ -58,6 +58,11 @@ vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, {
 })
 
 
+vim.keymap.set("n", "<F7>", ":make<CR>", { desc = "Build Debug" })
+vim.keymap.set("n", "<F8>", ":copen<CR>", { desc = "Open error list" })
+vim.keymap.set("n", "<leader>cn", ":cn<CR>", { desc = "Next error" })
+vim.keymap.set("n", "<leader>cp", ":cp<CR>", { desc = "Prev error" })
+
 
 
 
@@ -76,3 +81,6 @@ vim.keymap.set("n", "<leader>e", function()
     api.tree.open()
   end
 end, { desc = "Toggle NvimTree" })
+
+
+
