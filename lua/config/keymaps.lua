@@ -59,12 +59,6 @@ vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, {
 
 
 
-vim.keymap.set('n', '<F5>', function()
-  local file = vim.fn.expand('%:p')
-  local out = vim.fn.expand('%:p:r')
-  vim.cmd('!g++ "' .. file .. '" -o "' .. out .. '" && "' .. out .. '"')
-end, { noremap = true })
-
 
 
 vim.keymap.set("n", "<leader>pa", function()
